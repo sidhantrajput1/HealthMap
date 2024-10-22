@@ -1,0 +1,19 @@
+{
+    "id" : "1231",
+    "name" : "Aman",
+    "dob" : "31-12-1988",
+    "gender" : "male",
+    "Address" : "karolbag , new-delhi, 100001",
+    "phone-no" : "4983781290",
+    "emergency-contact-no" : "8921341234",
+    "father-Name" : "Rakesh Mehta",
+    "email" : "aman11@gmail.com",
+    "password" : "Aman@123",
+    "disease" : "Tuberculosis: A potentially deadly lung disease",
+    "aadhar-no" : "1234-5678-9012",
+    "current-medical-condition" : "diabetes, hypertension",
+    "allergies" : "Non-veg, Cold-food",
+    "paitients-id" : "11",
+    "reason-for-visit" : "Malaria",
+    "blood-types" : "A+"
+}
