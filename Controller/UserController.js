@@ -3,8 +3,9 @@ const jwt = require("jsonwebtoken");
 const dotenv = require('dotenv')
 dotenv.config( { path : './config.env'});
 
+
 const signToken = (id) => {
-  console.log(process.env.JWT_SECRET);
+  // console.log(process.env.JWT_SECRET);
 
   if(!process.env.JWT_SECRET)
 
@@ -14,8 +15,16 @@ const signToken = (id) => {
 };
 
 exports.signup = async (req, res) => {
-  const user = await User.create(req.body);
 
+  const {password , passwordConfirm} = req.body
+  
+  if(this.password !== passwordConfirm) {
+    return res.status(401).json({
+      message : "Password do not match"
+    })
+  }
+  
+  const user = await User.create(req.body);
   const token = signToken(user._id);
 
   res.status(200).json({

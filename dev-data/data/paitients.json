@@ -3,6 +3,7 @@
     "name" : "Aman",
     "dob" : "31-12-1988",
     "gender" : "male",
+    "image" : "./PaitientImg/paitient_!",
     "Address" : "karolbag , new-delhi, 100001",
     "phone-no" : "4983781290",
     "emergency-contact-no" : "8921341234",
