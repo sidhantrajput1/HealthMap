@@ -1,0 +1,19 @@
+{
+    "name": "Dr. Priya Sharma",
+    "email": "priya.sharma@example.com",
+    "phone": "9876543210",
+    "gender": "Female",
+    "dateOfBirth": "1980-05-10",
+    "address": "123 Green Park, New Delhi, India",
+    "specialization": "Cardiologist",
+    "qualifications": ["MBBS", "MD", "DM (Cardiology)"],
+    "yearsOfExperience": 12,
+    "consultationFee": 800,
+    "schedule": "Monday to Friday, 9 AM - 3 PM",
+    "hospital": "City Heart Hospital",
+    "licenseNumber": "D12345678",
+    "availability": true,
+    "languages": ["English", "Hindi"],
+    "emergencyContact": "9876543222"
+  }
+  
