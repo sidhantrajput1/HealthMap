@@ -11,3 +11,21 @@ exports.signup = async (req, res) => {
     })
 }
 
+exports.login = async (req, res) => {
+    const {email, password} = req.body;
+
+    if(!email || !password ) {
+        return res.status(401).json({
+            message : "Please provide your email and password"
+        })
+    }
+    
+    const doctor = await Doctor.findOne( {email} ).select("+password");
+
+    res.status(201).json({
+        status : 'Success',
+        message : 'Candidate Login Successfully'
+    })
+
+}
+
