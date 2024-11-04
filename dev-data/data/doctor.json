@@ -1,19 +1,39 @@
-{
-    "name": "Dr. Priya Sharma",
-    "email": "priya.sharma@example.com",
-    "phone": "9876543210",
-    "gender": "Female",
-    "dateOfBirth": "1980-05-10",
-    "address": "123 Green Park, New Delhi, India",
-    "specialization": "Cardiologist",
-    "qualifications": ["MBBS", "MD", "DM (Cardiology)"],
-    "yearsOfExperience": 12,
-    "consultationFee": 800,
-    "schedule": "Monday to Friday, 9 AM - 3 PM",
-    "hospital": "City Heart Hospital",
-    "licenseNumber": "D12345678",
-    "availability": true,
-    "languages": ["English", "Hindi"],
-    "emergencyContact": "9876543222"
-  }
-  
+[
+    {
+        "name": "Dr. Priya Sharma",
+        "email": "priya.sharma@example.com",
+        "phone": "9876543210",
+        "gender": "Female",
+        "dateOfBirth": "1980-05-10",
+        "address": "123 Green Park, New Delhi, India",
+        "specialization": "Cardiologist",
+        "qualifications": ["MBBS", "MD", "DM (Cardiology)"],
+        "yearsOfExperience": 12,
+        "consultationFee": 800,
+        "schedule": "Monday to Friday, 9 AM - 3 PM",
+        "hospital": "City Heart Hospital",
+        "licenseNumber": "D12345678",
+        "availability": true,
+        "languages": ["English", "Hindi"],
+        "emergencyContact": "9876543222"
+    },
+    {
+        "name": "Dr. Anil Mehra",
+        "email": "anil.mehra@example.com",
+        "password": "orthospecialist123",
+        "phone": "9876543221",
+        "gender": "Male",
+        "dateOfBirth": "1975-08-20",
+        "address": "456 Park Lane, Mumbai, India",
+        "specialization": "Orthopedic Surgeon",
+        "qualifications": ["MBBS", "MS (Orthopedics)"],
+        "yearsOfExperience": 18,
+        "consultationFee": 1000,
+        "schedule": "Monday to Saturday, 10 AM - 4 PM",
+        "hospital": "Apollo Hospital",
+        "licenseNumber": "M45678912",
+        "availability": true,
+        "languages": ["English", "Hindi", "Marathi"],
+        "emergencyContact": "9876543229"
+    }
+]
