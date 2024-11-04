@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Dr. John Doe",
+        "type": "doctor",
+        "coordinates": { 
+            "latitude": 28.6139, 
+            "longitude": 77.2090 
+        },
+        "roomNumber": "101"
+    },
+    {
+        "name": "Medical Supplies",
+        "type": "medical",
+        "coordinates": { 
+            "latitude": 28.6140, 
+            "longitude": 77.2091 
+        },
+        "roomNumber": "102"
+    },
+    {
+        "name": "Neurology Department",
+        "type": "neurologist",
+        "coordinates": { 
+            "latitude": 28.6141, 
+            "longitude": 77.2092 
+        },
+        "roomNumber": "103"
+    }
+]

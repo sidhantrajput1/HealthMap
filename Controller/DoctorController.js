@@ -2,8 +2,7 @@ const Doctor = require('../Models/DoctorModel.js');
 const bcrypt = require('bcrypt')
 
 exports.signup = async (req, res) => {
-    const doctor = await Doctor.create(req.body);
-    
+    const doctor = await Doctor.create(req.body);  
 
     res.status(201).json({
         message : "Doctor Signup Succesfully",
@@ -11,6 +10,7 @@ exports.signup = async (req, res) => {
             doctor
         }
     })
+
 }
 
 exports.login = async (req, res) => {
