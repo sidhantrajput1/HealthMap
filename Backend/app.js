@@ -9,7 +9,12 @@ const DoctorRouter = require('./Routes/DoctorRoutes.js')
 const app = express();
 
 // Middleware
-app.use(cors());
+const corsOption = {
+    origin: "http://localhost:5173",
+    Credential: true
+}
+
+app.use(cors(corsOption));
 app.use(bodyParser.json());
 
 const limiter = rateLimit({

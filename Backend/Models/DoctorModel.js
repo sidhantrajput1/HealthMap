@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const bcrypt = require('bcrypt')
+const bcrypt = require("bcrypt");
 
 const doctorSchema = new mongoose.Schema(
   {
@@ -75,25 +75,27 @@ const doctorSchema = new mongoose.Schema(
     emergencyContact: {
       type: String,
     },
+    location: {
+      latitude: { type: Number, required: true },
+      longitude: { type: Number, required: true },
+    },
   },
   {
     timestamps: true,
   }
 );
 
-
-doctorSchema.pre('save' ,async function (next) {
-  // only runs this function if password is actually modified  
-  if (!this.isModified('password')) {
-      return next();
+doctorSchema.pre("save", async function (next) {
+  // only runs this function if password is actually modified
+  if (!this.isModified("password")) {
+    return next();
   }
 
   // hash the password with cost of 12
-  this.password = await  bcrypt.hash(this.password , 12);
+  this.password = await bcrypt.hash(this.password, 12);
 
   next();
-})
-
+});
 
 const Doctor = mongoose.model("Doctor", doctorSchema);
 
