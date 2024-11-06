@@ -10,8 +10,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-4">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="mt-4 mx-auto max-w-screen-xl">
+      <div className="container flex justify-between items-center">
         {/* Logo */}
         <div className="text-black font-bold text-xl">
           <Link to="/">HealthMap</Link>
