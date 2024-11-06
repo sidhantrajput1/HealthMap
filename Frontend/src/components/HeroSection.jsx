@@ -1,4 +1,4 @@
-const Testimonial = () => {
+const HeroSection = () => {
   return (
     <div className="mx-auto max-w-screen-xl mt-36 grid grid-cols-2 font-serif justify-center">
       <div className="flex flex-col gap-8 items-start justify-center">
@@ -9,7 +9,7 @@ const Testimonial = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
           assumenda culpa consequatur aspernatur hic unde vitae voluptates
         </p>
-        <button className="border p-3 bg-green-400 text-pretty">
+        <button className="p-3 bg-green-400 text-pretty">
           Get Started
         </button>
       </div>
@@ -20,7 +20,7 @@ const Testimonial = () => {
           ipsam!
         </p>
         <img
-          className="w-100 h-100"
+          className=""
           src="https://png.pngtree.com/png-clipart/20230918/ourmid/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png"
           alt=""
         />
@@ -30,4 +30,4 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial;
+export default HeroSection;

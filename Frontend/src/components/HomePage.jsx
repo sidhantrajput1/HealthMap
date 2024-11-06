@@ -1,12 +1,14 @@
 
 import Navbar from "./Navbar"
-import Testimonial from "./Testimonial"
+import HeroSection from "./HeroSection"
+import OurService from "./OurService"
 
 const Home = () => {
     return (
-        <div className="">
+        <div className="bg-emerald-600">
             <Navbar />
-            <Testimonial />
+            <HeroSection />
+            <OurService />
         </div>
     )
 }
