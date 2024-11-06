@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+// import SelectRole from "./SelectRole";
+
 const HeroSection = () => {
   return (
     <div className="mx-auto max-w-screen-xl mt-36 grid grid-cols-2 font-serif justify-center">
@@ -9,21 +12,23 @@ const HeroSection = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
           assumenda culpa consequatur aspernatur hic unde vitae voluptates
         </p>
-        <button className="p-3 bg-green-400 text-pretty">
-          Get Started
-        </button>
+        <Link to="/select-role">
+          <button className="p-3 bg-green-400 text-pretty">
+            Get Started
+          </button>
+        </Link>
       </div>
       <div className="flex justify-center items-center ">
         <div className="bg-green-300 rounded-s-full flex items-center justify-center">
-        <p className="p-8">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-          ipsam!
-        </p>
-        <img
-          className=""
-          src="https://png.pngtree.com/png-clipart/20230918/ourmid/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png"
-          alt=""
-        />
+          <p className="p-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            ipsam!
+          </p>
+          <img
+            className=""
+            src="https://png.pngtree.com/png-clipart/20230918/ourmid/pngtree-photo-men-doctor-physician-chest-smiling-png-image_10132895.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
