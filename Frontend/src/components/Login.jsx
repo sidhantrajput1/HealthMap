@@ -39,11 +39,10 @@ const Login = () => {
 
   return (
     <>
-      <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      <div className="flex justify-center items-center min-h-screen bg-emerald-700">
         <div className="w-full max-w-md bg-white shadow-md rounded-lg p-8">
           <h2 className="text-3xl font-bold text-center mb-6">Login Page</h2>
           <form onSubmit={handleSubmit}>
-
             {/* Email Input */}
             <div className="mb-4">
               <div className="flex items-center space-x-3">
@@ -96,9 +95,12 @@ const Login = () => {
               </button>
             </div>
             <div className="mt-4 text-center ">
-              <Link to="/login" className="text-blue-500 hover:underline">
-                Already have an account?
-              </Link>
+              <p className="text-blue-500 ">
+                Not a Memeber ? 
+                <Link to="/select-role">
+                  <span className="hover:underline"> Sign in</span>
+                </Link>
+              </p>
             </div>
           </form>
         </div>
