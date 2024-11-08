@@ -7,6 +7,7 @@ const PatientRouter = require('./Routes/PatientRoutes.js')
 const DoctorRouter = require('./Routes/DoctorRoutes.js')
 const AppointmentRouter = require('./Routes/AppointmentRoutes.js');
 const MedicalRecordRouter = require('./Routes/MedicalRecordRoutes.js');
+const BillingRouter = require('./Routes/BillingRoutes.js');
 
 const app = express();
 
@@ -31,6 +32,7 @@ app.use('/api/v1/patients', PatientRouter)
 app.use('/api/v1/doctors', DoctorRouter);
 app.use('/api/v1/appointment', AppointmentRouter);
 app.use('/api/v1/medicalrecords', MedicalRecordRouter);
+app.use('/api/v1/bills', BillingRouter);
 
 
 // Sample route
