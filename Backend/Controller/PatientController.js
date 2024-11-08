@@ -1,4 +1,4 @@
-const User = require("../Models/UserModel");
+const Patient = require("../Models/PatientModel");
 const jwt = require("jsonwebtoken");
 const dotenv = require('dotenv')
 dotenv.config( { path : './config.env'});
@@ -24,14 +24,14 @@ exports.signup = async (req, res) => {
     })
   }
   
-  const user = await User.create(req.body);
-  const token = signToken(user._id);
+  const patient = await Patient.create(req.body);
+  const token = signToken(patient._id);
 
   res.status(200).json({
-    messgae: "User Register Successfully",
+    messgae: "Patient Register Successfully",
     token,
     data: {
-      user,
+      patient,
     },
   });
 };
@@ -45,7 +45,7 @@ exports.login = async (req, res) => {
     });
   }
 
-  const user = await User.findOne({ email }).select("+password");
+  const patient = await Patient.findOne({ email }).select("+password");
 
   res.status(201).json({
     status: "Success",

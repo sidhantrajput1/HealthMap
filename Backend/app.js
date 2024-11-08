@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const rateLimit = require('express-rate-limit');
-const userRouter = require('./Routes/UserRoutes')
+const PatientRouter = require('./Routes/PatientRoutes.js')
 const DoctorRouter = require('./Routes/DoctorRoutes.js')
 
 const app = express();
@@ -25,7 +25,7 @@ const limiter = rateLimit({
 
 app.use('/api', limiter);
 
-app.use('/api/v1/user', userRouter)
+app.use('/api/v1/patients', PatientRouter)
 app.use('/api/v1/doctors', DoctorRouter);
 
 
