@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const rateLimit = require('express-rate-limit');
 const PatientRouter = require('./Routes/PatientRoutes.js')
 const DoctorRouter = require('./Routes/DoctorRoutes.js')
+const AppointmentRouter = require('./Routes/AppointmentRoutes.js');
 
 const app = express();
 
@@ -27,6 +28,7 @@ app.use('/api', limiter);
 
 app.use('/api/v1/patients', PatientRouter)
 app.use('/api/v1/doctors', DoctorRouter);
+app.use('/api/v1/appointment', AppointmentRouter);
 
 
 // Sample route
