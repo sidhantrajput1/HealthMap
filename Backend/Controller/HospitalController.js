@@ -1,6 +1,5 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const Patient = require("../models/Patient");
 
 const JWT_SECRET = process.env.JWT_SECRET || "your_jwt_secret_key";
 
@@ -69,19 +68,4 @@ exports.login = async (req, res) => {
 };
 
 // Middleware to verify token
-exports.authenticate = (req, res, next) => {
-  const token = req.header("Authorization")?.split(" ")[1];
-  if (!token) {
-    return res
-      .status(401)
-      .json({ message: "Access denied. No token provided." });
-  }
 
-  try {
-    const decoded = jwt.verify(token, JWT_SECRET);
-    req.user = decoded; // Add user info to request
-    next();
-  } catch (error) {
-    res.status(400).json({ message: "Invalid token" });
-  }
-};

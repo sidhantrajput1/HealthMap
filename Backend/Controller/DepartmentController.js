@@ -38,9 +38,7 @@ exports.getAllDepartments = async (req, res) => {
 
 exports.getDepartmentById = async (req, res) => {
   try {
-    const department = await Department.findById(req.params.id).populate(
-      "staff departmentHead"
-    );
+    const department = await Department.findById(req.params.id);
 
     if (!department) {
       return res.status(404).json({

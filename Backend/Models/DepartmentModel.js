@@ -26,6 +26,7 @@ const departmentSchema = new Schema(
         type: String,
       },
     },
+    coordinates: { lat: Number, lng: Number },
     staff: [{
       type: Schema.Types.ObjectId,
       ref: 'Staff',

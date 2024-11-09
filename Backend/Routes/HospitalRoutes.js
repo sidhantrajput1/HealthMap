@@ -1,14 +1,11 @@
 const express = require("express");
-const authController = require("../controllers/authController");
 const router = express.Router();
+const HospitalController = require('../Controller/HospitalController')
 
 
-router.post("/register", authController.register);
-router.post("/login", authController.login);
+router.post("/register", HospitalController.register);
+router.post("/login", HospitalController.login);
 
 
-router.get("/protected", authController.authenticate, (req, res) => {
-  res.status(200).json({ message: "This is a protected route", user: req.user });
-});
 
 module.exports = router;
