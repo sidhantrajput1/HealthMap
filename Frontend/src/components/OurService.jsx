@@ -1,4 +1,4 @@
-import { FaLocationArrow } from "react-icons/fa";
+import { FaBlog, FaChalkboard, FaChartPie,  FaLocationArrow, FaSignature, FaUncharted } from "react-icons/fa";
 const OurService = () => {
   return (
     <div className="mt-28 mx-auto max-w-screen-xl">
@@ -6,13 +6,12 @@ const OurService = () => {
         <div className="flex flex-col gap-2">
           <h3 className="text-5xl font-semibold font-serif">Our Service</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-            odio?
+            Real-time tracking solutions designed to optimize hospital logistics by monitoring critical assets and staff.
           </p>
         </div>
         <div>
           <button className="p-3 bg-green-400 text-pretty">
-            Book an Appoinment
+            Book an Appointment
           </button>
         </div>
       </div>
@@ -24,81 +23,76 @@ const OurService = () => {
           </div>
           <div className="text-center">
             <h3 className="text-xl font-semibold text-gray-800">
-              Tracking Hospital
+              Real-Time Asset Tracking
             </h3>
             <p className="text-gray-600 mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Pariatur, tenetur!
+              Track the live location of hospital assets for efficient logistics.
             </p>
           </div>
         </div>
         <div className="mb-4 flex flex-col gap-4 justify-center items-center p-6 bg-green-300 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out max-w-sm">
           <div className="bg-green-100 p-4 rounded-full">
-            <FaLocationArrow className="w-16 h-16 text-green-600" />
+            <FaSignature className="w-16 h-16 text-green-600" />
           </div>
           <div className="text-center">
             <h3 className="text-xl font-semibold text-gray-800">
-              Tracking Hospital
+              Asset Management
             </h3>
             <p className="text-gray-600 mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Pariatur, tenetur!
+              Manage, add, and update hospital assets with ease.
             </p>
           </div>
         </div>
         <div className="mb-4 flex flex-col gap-4 justify-center items-center p-6 bg-green-300 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out max-w-sm">
           <div className="bg-green-100 p-4 rounded-full">
-            <FaLocationArrow className="w-16 h-16 text-green-600" />
+            <FaUncharted className="w-16 h-16 text-green-600" />
           </div>
           <div className="text-center">
             <h3 className="text-xl font-semibold text-gray-800">
-              Tracking Hospital
+              Alerts & Notifications
             </h3>
             <p className="text-gray-600 mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Pariatur, tenetur!
+              Receive critical alerts for asset misplacements or unauthorized movements.
             </p>
           </div>
         </div>
         <div className="mb-4 flex flex-col gap-4 justify-center items-center p-6 bg-green-300 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out max-w-sm">
           <div className="bg-green-100 p-4 rounded-full">
-            <FaLocationArrow className="w-16 h-16 text-green-600" />
+            <FaChartPie className="w-16 h-16 text-green-600" />
           </div>
           <div className="text-center">
             <h3 className="text-xl font-semibold text-gray-800">
-              Tracking Hospital
+              Analytics & Reporting
             </h3>
             <p className="text-gray-600 mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Pariatur, tenetur!
+              Generate detailed reports on asset usage and logistics.
             </p>
           </div>
         </div>
         <div className="mb-4 flex flex-col gap-4 justify-center items-center p-6 bg-green-300 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out max-w-sm">
           <div className="bg-green-100 p-4 rounded-full">
-            <FaLocationArrow className="w-16 h-16 text-green-600" />
+            <FaChalkboard className="w-16 h-16 text-green-600" />
           </div>
           <div className="text-center">
             <h3 className="text-xl font-semibold text-gray-800">
-              Tracking Hospital
+              Role-Based Access Control
             </h3>
             <p className="text-gray-600 mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Pariatur, tenetur!
+              Ensure secure access to data based on user roles, providing admin, manager, and staff levels.
             </p>
           </div>
         </div>
+        
         <div className="mb-4 flex flex-col gap-4 justify-center items-center p-6 bg-green-300 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out max-w-sm">
           <div className="bg-green-100 p-4 rounded-full">
-            <FaLocationArrow className="w-16 h-16 text-green-600" />
+            <FaBlog className="w-16 h-16 text-green-600" />
           </div>
           <div className="text-center">
             <h3 className="text-xl font-semibold text-gray-800">
-              Tracking Hospital
+              Integration with Hospital Systems
             </h3>
             <p className="text-gray-600 mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Pariatur, tenetur!
+              Integrate seamlessly with other hospital systems for smooth and coordinated operations.
             </p>
           </div>
         </div>

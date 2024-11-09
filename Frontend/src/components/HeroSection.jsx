@@ -9,20 +9,18 @@ const HeroSection = () => {
           Get Appointment Easy and Fast
         </h3>
         <p className="">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-          assumenda culpa consequatur aspernatur hic unde vitae voluptates
+        Experience the convenience of booking appointments in just a few clicks. Our platform allows you to select your role and get started right away.
         </p>
         <Link to="/select-role">
           <button className="p-3 bg-green-400 text-pretty">
-            Get Started
+            Get Started <span>&#x2192;</span>
           </button>
         </Link>
       </div>
       <div className="flex justify-center items-center ">
         <div className="bg-green-300 rounded-s-full flex items-center justify-center">
-          <p className="p-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-            ipsam!
+          <p className="p-10">
+          Our expert medical professionals are here to provide top-notch care for you and your family. From consultations to treatments, we’ve got you covered.
           </p>
           <img
             className=""

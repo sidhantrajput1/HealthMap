@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection"
 import OurService from "./OurService"
 import Footer from "./Footer"
 import About from "./About"
+// import HospitalMap from "./HospitalMap"
 
 const Home = () => {
     return (

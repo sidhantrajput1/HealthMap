@@ -97,13 +97,13 @@ const Navbar = () => {
             </Link>
             <Link
               to="/services"
-              className="block py-2 px-4 text-black hover:bg-blue-700"
+              className="block py-2 px-4 text-black hover:bg-blue-700 text-2xl font-serif uppercase"
             >
               Services
             </Link>
-            <Link
+            <Link 
               to="/contact"
-              className="block py-2 px-4 text-black hover:bg-blue-700"
+              className="block py-2 px-4 text-black hover:bg-blue-700 font-serif"
             >
               Contact
             </Link>
